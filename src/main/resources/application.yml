@@ -1,0 +1,17 @@
+server:
+  port: 42069
+
+spring:
+  application:
+      name: GEScraper
+  # Database Credentials
+  datasource:
+    username: ${ADMIN_ROLE}
+    password: ${ADMIN_PASS}
+    url: jdbc:postgresql://localhost:5432/postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+scheduling:
+  enabled: true
